@@ -18,7 +18,7 @@ export class XScene{
         this.renderer=new WebGLRenderer();
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(this.renderer.domElement);
-        window.addEventListener('risize', this.onWindowResize, false);
+        window.addEventListener('resize', this.onWindowResize, false);
         new OrbitControls(this.camera, this.renderer.domElement);
         this.geometry=new SphereGeometry(16,30,30);
         this.material=new MeshBasicMaterial({color: 0xff0000, wireframe: true})
