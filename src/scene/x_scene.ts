@@ -38,7 +38,7 @@ export class XScene{
     public static getInstance(){
         return this.instance;
     }
-    onWindowResize(){
+    onWindowResize=()=>{
         this.camera.aspect=window.innerWidth/window.innerHeight
         this.camera.updateProjectionMatrix();
         this.renderer.setSize(window.innerWidth, window.innerHeight);
