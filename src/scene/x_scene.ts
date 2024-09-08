@@ -20,7 +20,7 @@ export class XScene{
 
     private constructor(){
         this.camera=new PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1, 1000);
-        this.camera.position.setY(4);
+        this.camera.position.setX(4);
         this.camera.position.setY(4);
         this.camera.position.setZ(4);
         this.scene=new Scene();
